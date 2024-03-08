@@ -3,7 +3,34 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.8.15
-    created: "2024-03-08T14:52:58.59024716+01:00"
+    created: "2024-03-08T15:00:32.793957133+01:00"
+    dependencies:
+    - name: kas
+      repository: file://../../plural/helm/kas
+      version: 0.0.5
+    - name: controller
+      repository: file://../controller
+      version: 0.0.21
+    - alias: dashboard
+      condition: dashboard.enabled
+      name: kubernetes-dashboard
+      repository: https://kubernetes.github.io/dashboard
+      version: 7.1.1
+    - condition: flux2.enabled
+      name: flux2
+      repository: https://fluxcd-community.github.io/helm-charts
+      version: 2.11.1
+    description: deploys the plural console and additional dependencies, for use in
+      bring-your-own-kube setups
+    digest: b89459c9c1058bf15bbbde58ff68648a7e908f60d4b5580f4e0ee448c4765599
+    name: console
+    type: application
+    urls:
+    - console-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.8.15
+    created: "2024-03-08T15:00:32.772941117+01:00"
     dependencies:
     - name: kas
       repository: file://../../plural/helm/kas
@@ -28,31 +55,4 @@ entries:
     urls:
     - console-0.2.0.tgz
     version: 0.2.0
-  - apiVersion: v2
-    appVersion: 0.8.15
-    created: "2024-03-08T14:52:58.611875473+01:00"
-    dependencies:
-    - name: kas
-      repository: file://../../plural/helm/kas
-      version: 0.0.5
-    - name: controller
-      repository: file://../controller
-      version: 0.0.21
-    - alias: dashboard
-      condition: dashboard.enabled
-      name: kubernetes-dashboard
-      repository: https://kubernetes.github.io/dashboard
-      version: 7.1.1
-    - condition: flux2.enabled
-      name: flux2
-      repository: https://fluxcd-community.github.io/helm-charts
-      version: 2.11.1
-    description: deploys the plural console and additional dependencies, for use in
-      bring-your-own-kube setups
-    digest: 58fb9958dd03d999ae1e38fbfd7785876d977670121af7b575bb8bedc70cde9e
-    name: console
-    type: application
-    urls:
-    - console-0.2.1.tgz
-    version: 0.2.1
-generated: "2024-03-08T14:52:58.568657048+01:00"
+generated: "2024-03-08T15:00:32.750987301+01:00"
