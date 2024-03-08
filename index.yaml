@@ -3,7 +3,7 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.8.15
-    created: "2024-03-08T14:50:45.256825337+01:00"
+    created: "2024-03-08T14:52:58.59024716+01:00"
     dependencies:
     - name: kas
       repository: file://../../plural/helm/kas
@@ -30,7 +30,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 0.8.15
-    created: "2024-03-08T14:50:45.27893856+01:00"
+    created: "2024-03-08T14:52:58.611875473+01:00"
     dependencies:
     - name: kas
       repository: file://../../plural/helm/kas
@@ -42,17 +42,17 @@ entries:
       condition: dashboard.enabled
       name: kubernetes-dashboard
       repository: https://kubernetes.github.io/dashboard
-      version: 7.0.1
+      version: 7.1.1
     - condition: flux2.enabled
       name: flux2
       repository: https://fluxcd-community.github.io/helm-charts
       version: 2.11.1
     description: deploys the plural console and additional dependencies, for use in
       bring-your-own-kube setups
-    digest: 32de07df15a6c6385d82fe6bc943af60e1a1d3da0a89b408543fae301962569a
+    digest: 58fb9958dd03d999ae1e38fbfd7785876d977670121af7b575bb8bedc70cde9e
     name: console
     type: application
     urls:
     - console-0.2.1.tgz
     version: 0.2.0
-generated: "2024-03-08T14:50:45.234301815+01:00"
+generated: "2024-03-08T14:52:58.568657048+01:00"
