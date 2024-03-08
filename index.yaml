@@ -3,7 +3,7 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.8.15
-    created: "2024-03-08T14:31:17.229889689+01:00"
+    created: "2024-03-08T14:38:07.646421173+01:00"
     dependencies:
     - name: kas
       repository: file://../../plural/helm/kas
@@ -22,10 +22,10 @@ entries:
       version: 2.11.1
     description: deploys the plural console and additional dependencies, for use in
       bring-your-own-kube setups
-    digest: 6422541550ca0579e23dd068fb653f58253423fd1733e45d88079ee185b9985c
+    digest: 4bb03df5fd1a941217f1e92798e1ff2504e429f4e773d117abfbb3dfa37d5d98
     name: console
     type: application
     urls:
     - console-0.2.0.tgz
     version: 0.2.0
-generated: "2024-03-08T14:31:17.207655233+01:00"
+generated: "2024-03-08T14:38:07.623124239+01:00"
